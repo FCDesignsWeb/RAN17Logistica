@@ -1,0 +1,134 @@
+body{
+margin:0;
+font-family:Arial;
+background:#0b1f3f;
+color:white;
+text-align:center;
+}
+
+/* HERO */
+.hero{
+background-image:url("imagenes/log1.png");
+background-size:cover;
+background-position:center;
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.overlay{
+background:rgba(0,0,0,0.6);
+padding:60px;
+width:100%;
+}
+
+.logo-inicio{
+width:380px;
+max-width:85%;
+animation:aparecer 2s ease;
+}
+
+.subtitulo{
+font-size:22px;
+margin-top:20px;
+color:#e0e0e0;
+}
+
+@keyframes aparecer{
+from{
+opacity:0;
+transform:translateY(-40px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* SERVICIOS */
+.servicios{
+padding:70px 20px;
+background:linear-gradient(135deg,#0b1f3f,#1f3f75);
+}
+
+.contenedor{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+}
+
+.card{
+background:white;
+color:#333;
+width:230px;
+padding:20px;
+border-radius:12px;
+box-shadow:0 8px 25px rgba(0,0,0,0.3);
+}
+
+.card img{
+width:100%;
+border-radius:8px;
+}
+
+.contacto{
+padding:60px;
+}
+
+/* WHATSAPP */
+.whatsapp-float{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+font-size:30px;
+width:60px;
+height:60px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.4);
+}
+
+/* INSTAGRAM */
+.instagram-float{
+position:fixed;
+bottom:100px;
+right:25px;
+background:#E1306C;
+color:white;
+font-size:30px;
+width:60px;
+height:60px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+text-decoration:none;
+box-shadow:0 5px 15px rgba(0,0,0,0.4);
+}
+
+/* FOOTER */
+footer{
+background:#081730;
+padding:20px;
+}
+
+/* RESPONSIVE */
+@media (max-width:768px){
+.logo-inicio{
+width:250px;
+}
+.contenedor{
+flex-direction:column;
+align-items:center;
+}
+.card{
+width:80%;
+}
+}
